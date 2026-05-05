@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5may2026 Project</title>
+</head>
+<body>
+
+<h2>Student Table</h2>
+
+<table border="1">
+<tr>
+    <th>Name</th>
+    <th>Marks</th>
+    <th>Result</th>
+</tr>
+
+<% students.forEach(s => { %>
+<tr>
+    <td><%= s.name %></td>
+    <td><%= s.marks %></td>
+    <td><%= s.result %></td>
+</tr>
+<% }) %>
+
+</table>
+
+<hr>
+
+<h2>URL Shortener</h2>
+<form action="/shorten" method="POST">
+    <input type="text" name="url" placeholder="Enter URL">
+    <button type="submit">Shorten</button>
+</form>
+
+</body>
+</html>
